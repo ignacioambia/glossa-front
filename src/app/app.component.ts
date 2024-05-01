@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Device, GetLanguageCodeResult } from '@capacitor/device';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private translateService: TranslateService) {}
+
+  async ngOnInit() {
+    const { value: lang } = await Device.getLanguageCode();
+    const allowedLangs = ['en', 'es'];
+    this.translateService.use(allowedLangs.includes(lang) ? lang : 'en');
+  }
 }

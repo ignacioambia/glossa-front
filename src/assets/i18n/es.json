@@ -1,0 +1,11 @@
+{
+ "lang": {
+   "en": "Inglés",
+   "es": "Español"
+ },
+ "home":{
+   "practice": "Practicar",
+   "no-history":"Sin historial",
+   "enter-text":"Ingresa texto"
+ }
+}

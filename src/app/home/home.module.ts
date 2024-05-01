@@ -9,13 +9,16 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HomePage } from './home.page';
 import { TranslationCardComponent } from '../translation-card/translation-card.component';
 import { ButtonComponent } from '../button/button.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, HomePageRoutingModule],
-  declarations: [
-    HomePage,
-    TranslationCardComponent,
-    ButtonComponent,
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    HomePageRoutingModule,
+    TranslateModule,
   ],
+  declarations: [HomePage, TranslationCardComponent, ButtonComponent],
 })
 export class HomePageModule {}

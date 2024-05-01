@@ -1,0 +1,11 @@
+{
+  "lang": {
+    "en": "English",
+    "es": "Spanish"
+  },
+  "home":{
+    "practice": "Practice",
+    "no-history":"No search history",
+    "enter-text":"Enter text"
+  }
+}

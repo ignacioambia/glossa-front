@@ -1,20 +1,19 @@
 <ion-content [fullscreen]="true">
   <div class="translate-input">
-    <textarea lang="en" #translateInput [(ngModel)]="translateTxt" (keydown)="handleEnter($event)" rows="2" placeholder="Enter text"
+    <textarea lang="en" #translateInput [(ngModel)]="translateTxt" (keydown)="handleEnter($event)" rows="2" [placeholder]="'home.enter-text' | translate "
       enterkeyhint="go"></textarea>
   </div>
   <div class="translate-btns">
-
-    <div class="translate-btn">Spanish</div>
+    <div class="translate-btn">{{ 'lang.es' | translate }}</div>
     <div class="switch"><img src="../../assets/switch.svg" alt=""></div>
-    <div class="translate-btn">English</div>
+    <div class="translate-btn">{{ 'lang.en' | translate }}</div>
   </div>
 
   <div class="btn-wrapper">
     <app-button (click)="practice()">
       <div class="input-content">
           <img src="../../assets/brain.svg">
-        <span>      Practice        </span>
+        <span>      {{ 'home.practice' | translate }}        </span>
       </div>
     </app-button>
   </div>
@@ -29,7 +28,7 @@
     </div>
   } 
   @else {
-    <div class="no-history">No search history</div>
+    <div class="no-history">{{ 'home.no-history' | translate}}</div>
   }
 
 </ion-content>
