@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+  <div class="translate-input">
+    <textarea lang="en" #translateInput [(ngModel)]="translateTxt" (keydown)="handleEnter($event)" rows="2" placeholder="Enter text"
+      enterkeyhint="go"></textarea>
+  </div>
+  <div class="translate-btns">
+
+    <div class="translate-btn">Spanish</div>
+    <div class="switch"><img src="../../assets/switch.svg" alt=""></div>
+    <div class="translate-btn">English</div>
+  </div>
+
+  <div class="btn-wrapper">
+    <app-button (click)="practice()">
+      <div class="input-content">
+          <img src="../../assets/brain.svg">
+        <span>      Practice        </span>
+      </div>
+    </app-button>
+  </div>
+  
+  @if(translations && translations.length){
+    <div class="translations-list">
+      @for(translation of translations; track translation._id){
+  
+      <app-translation-card [translation]="translation"></app-translation-card>
+      }
+  
+    </div>
+  } 
+  @else {
+    <div class="no-history">No search history</div>
+  }
+
+</ion-content>
