@@ -1,0 +1,21 @@
+.container{
+ height: 16px;
+ border: 1px solid #5B5B5B;
+ border-radius: 8px;
+ background: #1A1A1A;
+ display: flex;
+ align-items: center;
+ box-sizing: content-box;
+ position: relative;
+ padding: 0px 3px;
+ box-sizing: border-box;
+
+ .progress{
+  min-width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg,#00C7A2, #4C7ADC);
+  transition: width 0.5s ease-out;
+ }
+}
