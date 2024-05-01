@@ -1,8 +1,8 @@
+@import "../../theme/mixins.scss";
+
 .wrapper{
- background: var(--ion-item-background);
- border-radius: 8px;
- // margin: 18px;
- padding: 8px 18px;
+ 
+ @include card;
  display: flex;
  flex-direction: column;
  gap: 4px;
