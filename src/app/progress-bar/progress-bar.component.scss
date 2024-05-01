@@ -15,7 +15,7 @@
   height: 8px;
   border-radius: 5px;
   box-sizing: border-box;
-  background: linear-gradient(90deg,#00C7A2, #4C7ADC);
+  background: linear-gradient(90deg,var(--primary-color), var(--secondary-color));
   transition: width 0.5s ease-out;
  }
 }

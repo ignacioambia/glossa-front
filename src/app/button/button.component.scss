@@ -1,7 +1,7 @@
 .btn-wrapper{
  $border-radius: 8px;
 
- background: linear-gradient(90deg,#4C7ADC,#00C7A2);
+ background: linear-gradient(90deg,var(--secondary-color),var(--primary-color));
  color: transparent;
  background-clip: text;
  position: relative;
@@ -11,7 +11,7 @@
  &::after{
   content: "";
   position: absolute;
-  background: linear-gradient(90deg,#4C7ADC,#00C7A2);
+  background: linear-gradient(90deg,var(--secondary-color),var(--primary-color));
   // background: red;
   inset: -1px;
   z-index: -2;
@@ -29,7 +29,7 @@
  }
 
  &:active::after{
-  background: linear-gradient(90deg,#00C7A2, #4C7ADC);
+  background: linear-gradient(90deg,var(--primary-color), var(--secondary-color));
   // background: green;
  }
 }
