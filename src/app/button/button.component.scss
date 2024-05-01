@@ -1,0 +1,35 @@
+.btn-wrapper{
+ $border-radius: 8px;
+
+ background: linear-gradient(90deg,#4C7ADC,#00C7A2);
+ color: transparent;
+ background-clip: text;
+ position: relative;
+ padding: 4px 32px;
+ border-radius: $border-radius;
+
+ &::after{
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg,#4C7ADC,#00C7A2);
+  // background: red;
+  inset: -1px;
+  z-index: -2;
+  border-radius: $border-radius;
+  transition: 1s;
+ }
+
+ &::before{
+  content: "";
+  position: absolute;
+  border-radius: $border-radius;
+  background: var(--ion-background-color);
+  inset: 0px;
+  z-index: -1;
+ }
+
+ &:active::after{
+  background: linear-gradient(90deg,#00C7A2, #4C7ADC);
+  // background: green;
+ }
+}
