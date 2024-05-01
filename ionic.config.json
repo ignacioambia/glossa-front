@@ -1,5 +1,7 @@
 {
   "name": "glossa-front",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
