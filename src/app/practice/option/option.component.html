@@ -1,0 +1,4 @@
+<div class="option" (click)="handleSelection()">
+  <app-bullet [active]="optionActive" [type]="option.correctAnswer ? 'success': 'error'"></app-bullet>
+  <div class="text">{{option.text}}</div>
+</div>

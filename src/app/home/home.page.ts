@@ -49,7 +49,6 @@ export class HomePage implements OnInit {
     return firstValueFrom(this.http.get<Translation[]>(`${this.baseUrl}/translate`,{
       headers: new HttpHeaders().set('Authorization', `Bearer ${this.cachedToken}`)
     })).then(result => {
-      console.log('Result is: ', result);
       return result;
     })
   }

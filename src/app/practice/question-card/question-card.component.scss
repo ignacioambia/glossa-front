@@ -1,0 +1,33 @@
+@import '../../../theme/mixins.scss';
+
+.questions-card-wrapper{
+
+ margin-top: 3.8vw;
+ @include card;
+
+ .lang{
+  font-size: 14px;
+  color: var(--primary-color)
+ }
+
+ .word{
+  border-bottom: 1px solid var(--ion-background-color);
+  padding: 3.3vw 0px;
+  .received-word{
+   font-weight: 900;
+   font-size: 8vw;
+  }
+ }
+
+.options {
+ .lang{
+  margin: 18px 0px;
+ }
+ .options-list{
+  display: flex;
+  flex-direction: column;
+  gap: 6.9vw;
+ }
+}
+
+}

@@ -1,0 +1,16 @@
+<div class="questions-card-wrapper">
+  <div class="word">
+    <div class="lang">{{'lang.' + question.from | translate }}</div>
+    <div class="received-word">{{question.word}}</div>
+  </div>
+  <div class="options">
+    <div class="lang">{{'lang.' + question.to | translate }}</div>
+
+    <div class="options-list">
+      @for(option of question.options; track option.text){
+        <app-option (click)="chooseOption(option)" [option]="option"></app-option>
+      }
+    </div>
+
+  </div>
+</div>

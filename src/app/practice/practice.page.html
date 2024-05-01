@@ -1,11 +1,15 @@
 <ion-content [fullscreen]="true">
   <div class="wrapper">
-    <div class="cross-wrapper">
+    <div class="cross-wrapper" (click)="navCtrl.back()">
       <img src="../../assets/cross.svg" />
     </div>
 
     <div class="progress-container">
       <app-progress-bar [percentage]="10"></app-progress-bar>
+    </div>
+
+    <div class="questions">
+        <app-question-card [question]="question"></app-question-card>
     </div>
   
   </div>
