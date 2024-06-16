@@ -25,7 +25,7 @@ export class HomePage implements OnInit {
   }
 
   private cachedToken: string = '';
-;
+  
   private baseUrl: string = 'https://wordiest-back-295ae7bf781c.herokuapp.com';
 
   async ngOnInit() {
